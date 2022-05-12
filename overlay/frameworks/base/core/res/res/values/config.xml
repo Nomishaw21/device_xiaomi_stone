@@ -418,5 +418,8 @@
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
 
+    <!-- 15 seconds for default screen timeout -->
+    <integer name="def_screen_off_timeout">15000</integer>
+
 </resources>
 
