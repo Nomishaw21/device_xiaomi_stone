@@ -124,6 +124,9 @@ PRODUCT_PACKAGES += \
     libpiex_shim \
     libutilscallstack.vendor
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
