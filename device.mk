@@ -495,7 +495,7 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 ifeq ($(TARGET_DEBLOAT),true)
 PRODUCT_PACKAGES += \
-    RemovePackages   
+    RemovePackages
 endif
 
 # RIL
