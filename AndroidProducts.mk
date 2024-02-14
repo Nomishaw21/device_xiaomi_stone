@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_stone.mk
+    $(LOCAL_DIR)/blaze_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_stone-user \
-    banana_stone-userdebug \
-    banana_stone-eng
+    blaze_stone-user \
+    blaze_stone-userdebug \
+    blaze_stone-eng
