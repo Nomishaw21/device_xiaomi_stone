@@ -30,9 +30,6 @@ WITH_GAPPS := true
 # Charging Animation
 TARGET_USE_PIXEL_CHARGER := true
 
-# Use Prebuilt Kernel
-#PREBUILT_KERNEL := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := blaze_stone
 PRODUCT_DEVICE := stone
