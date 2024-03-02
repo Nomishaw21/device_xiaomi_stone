@@ -173,6 +173,9 @@ vendor.camera.hal1.packagelist=com.whatsapp,com.whatsapp.w4b,com.facebook.orca,c
 # Charger
 persist.vendor.charge.oneTrack=true
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM6375
