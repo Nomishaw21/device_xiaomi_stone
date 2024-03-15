@@ -7,3 +7,10 @@
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">POCO X5</string>
 </resources>
+
+    <!-- Set Window animation scale to 50% by default -->
+    <fraction name="def_window_animation_scale">50%</fraction>
+
+    <!-- Set Window transition scale to 50% by default -->
+    <fraction name="def_window_transition_scale">50%</fraction>
+m
