@@ -133,7 +133,7 @@ INLINE_KERNEL_PREBUILT := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)/kernel-headers
 
 # Media
 TARGET_USES_ION := true
