@@ -129,6 +129,12 @@ PRODUCT_COPY_FILES += \
 #Force prebuilt kernel
 INLINE_KERNEL_PREBUILT := true
 
+# Kill lineage kernel build task while preserving kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+
+# Workaround to make lineage's soong generator work
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
