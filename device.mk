@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/mixer_paths.xml \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_effects.xml \
+    $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_holi/bluetooth_audio_policy_configuration_7_0.xml \
 
 # Bluetooth
@@ -145,7 +146,11 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Dex
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+<<<<<<< HEAD
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+=======
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
+>>>>>>> stone_device/14
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
@@ -313,10 +318,9 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
-ifeq ($(PREBUILT_KERNEL),true)
 # Kernel Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/stone-kernel/kernel-headers
-endif
+
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -335,7 +339,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \

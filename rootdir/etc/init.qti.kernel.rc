@@ -97,6 +97,7 @@ on boot
     write /sys/block/sdh/queue/iosched/slice_idle 0
     write /sys/class/block/mmcblk0/queue/iosched/slice_idle 0
     write /sys/class/block/mmcblk1/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/iosched/group_idle 0
 
 on post-fs-data
     # Create directory used for dump collection

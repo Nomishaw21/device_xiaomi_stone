@@ -20,6 +20,9 @@
 
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+    
+    <!-- Default setting for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
+    <bool name="def_mobile_data_always_on">false</bool>
 
     <!-- Speed up the animations -->
     <fraction name="def_window_animation_scale">70%</fraction>

@@ -15,11 +15,13 @@ $(call inherit-product, vendor/blaze/config/common.mk)
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
 # Device props
-TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_DEBLOAT := true
+LINAG_MAINTAINER := Kami_Nomi
+LINEAGE_MAINTAINER := Kami_Nomi
 
 #Blaze Flags
 WITH_GAPPS := true

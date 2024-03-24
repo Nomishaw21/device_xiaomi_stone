@@ -26,5 +26,5 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 # Declare use of spatial audio
 ro.audio.spatializer_enabled=true
 
-# Blur
-ro.launcher.blur.appLaunch=0
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
