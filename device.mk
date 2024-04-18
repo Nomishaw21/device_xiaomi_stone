@@ -669,8 +669,8 @@ PRODUCT_COPY_FILES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    product_charger_res_images \
-    product_charger_res_images_vendor
+    libsuspend \
+    charger_res_images
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/stone/stone-vendor.mk)
