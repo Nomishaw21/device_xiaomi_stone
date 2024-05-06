@@ -19,6 +19,7 @@ typedef struct variant_info {
     std::string model;
     std::string mod_device;
     std::string build_fingerprint;
+    std::string soc_model;
 
 } variant_info_t;
 

@@ -22,6 +22,7 @@ static const variant_info_t stone_global_info = {
     .model = "POCO X5 5G",
     .mod_device = "moonstone_p_global",
     .build_fingerprint = FINGERPRINT_GL,
+    .soc_model = "Snapdragon 695",
 };
 
 static const variant_info_t stone_in_info = {
@@ -34,6 +35,7 @@ static const variant_info_t stone_in_info = {
 //  .mod_device = "moonstone_in_global",
     .mod_device = "moonstone_p_global", // Fixed miuicamera crash
     .build_fingerprint = FINGERPRINT_GL,
+    .soc_model = "Snapdragon 695",
 };
 
 static const variant_info_t sunstone_cn_info = {
@@ -46,6 +48,7 @@ static const variant_info_t sunstone_cn_info = {
 //  .mod_device = "moonstone",
     .mod_device = "moonstone_global", // Fixed miuicamera crash
     .build_fingerprint = FINGERPRINT_CN,
+    .soc_model = "Snapdragon 4 Gen 1",
 };
 
 static const variant_info_t sunstone_global_info = {
@@ -58,6 +61,7 @@ static const variant_info_t sunstone_global_info = {
 //  .mod_device = "moonstone",
     .mod_device = "moonstone_global", // Fixed miuicamera crash
     .build_fingerprint = FINGERPRINT_CN,
+    .soc_model = "Snapdragon 4 Gen 1",
 };
 
 static const variant_info_t sunstone_in_info = {
@@ -70,6 +74,7 @@ static const variant_info_t sunstone_in_info = {
 //  .mod_device = "moonstone",
     .mod_device = "moonstone_global", // Fixed miuicamera crash
     .build_fingerprint = FINGERPRINT_CN,
+    .soc_model = "Snapdragon 4 Gen 1",
 };
 
 static const variant_info_t sunstone_x_info = {
@@ -82,6 +87,7 @@ static const variant_info_t sunstone_x_info = {
 //  .mod_device = "moonstone",
     .mod_device = "moonstone_global", // Fixed miuicamera crash
     .build_fingerprint = FINGERPRINT_CN,
+    .soc_model = "Snapdragon 4 Gen 1",
 };
 
 static const std::vector<variant_info_t> variants = {
