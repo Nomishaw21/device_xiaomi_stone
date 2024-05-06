@@ -23,3 +23,7 @@ r_dir_file(system_app, vendor_sysfs_battery_supply)
 allow system_app sysfs:file { setattr getattr write open read };
 allow system_app vendor_sysfs_graphics:dir { search setattr getattr write open read };
 allow system_app privapp_data_file:dir { search };
+
+# Allow system_app to read fps info node
+allow system_app sysfs_fps:dir search;
+allow system_app sysfs_fps:file r_file_perms;
