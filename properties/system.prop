@@ -48,6 +48,8 @@ persist.log.tag.QC-time-services=S
 persist.log.tag.ResourcesCompat=S
 persist.log.tag.SYNX-UMD=S
 persist.log.tag.ultrasound_extn=S
+persist.log.tag.slpi=S
+persist.log.tag.RBS=S
 
 # Media
 media.aac_51_output_enabled=true
