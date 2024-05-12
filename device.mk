@@ -434,6 +434,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NfcOverlay \
     FrameworksResOverlayStone \
+    SettingsLibOverlayStone \
     SettingsOverlayStone \
     SystemUIOverlayStone \
     StoneCNSettingsProviderOverlay \
