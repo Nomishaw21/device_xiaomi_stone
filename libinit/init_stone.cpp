@@ -105,4 +105,9 @@ void vendor_load_properties() {
 
     // SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
+
+    // Release Keys
+    property_override("ro.build.keys", "release-keys");
+    property_override("ro.build.tags", "release-keys");
+
 }
