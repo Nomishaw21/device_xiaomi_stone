@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData \
-    libtinyxml \
     memtrack.default \
     vndservicemanager \
     vendor.display.config@2.0.so
