@@ -268,14 +268,14 @@
          <!-- B CPU - Cluster min freq uncapped -->
          <!-- L CPU - Cluster min freq uncapped -->
          <!-- B CPU - Cluster max freq ~1.22 GHz -->
-         <!-- L CPU - Cluster max freq ~1.22 Ghz -->
+         <!-- L CPU - Cluster max freq ~2.00 Ghz -->
          <!-- GPU - min freq 275Mhz -->
-         <!-- GPU - max freq 400Mhz -->
+         <!-- GPU - max freq 825Mhz -->
          <!-- GPUBW freq uncapped -->
          <Config
              Id="0x00001206" Enable="true" Timeout="0" Target="holi"
-             Resources="0x40800000, 0x0, 0x40800100, 0x0, 0x40804000, 0x4CC, 0x40804100, 0x4CC,
-             0X4280C000, 0x113, 0X42810000, 0x190, 0x42814000, 0x0"/>
+             Resources="0x40800000, 0x0, 0x40800100, 0x0, 0x40804000, 0x4CC, 0x40804100, 0x7D0,
+             0X4280C000, 0x113, 0X42810000, 0x339, 0x42814000, 0x0"/>
 
          <!-- vr mode -->
          <!-- B CPU - Cluster min freq ~1.22 Ghz -->
@@ -568,14 +568,14 @@
          <!-- B CPU - Cluster min freq uncapped -->
          <!-- L CPU - Cluster min freq uncapped -->
          <!-- B CPU - Cluster max freq ~1.22 GHz -->
-         <!-- L CPU - Cluster max freq ~1.22 Ghz -->
+         <!-- L CPU - Cluster max freq ~2.20 Ghz -->
          <!-- GPU - min freq 275Mhz -->
-         <!-- GPU - max freq 400Mhz -->
+         <!-- GPU - max freq 825Mhz -->
          <!-- GPUBW freq uncapped -->
          <Config
              Id="0x00001206" Enable="true" Timeout="0" Target="blair"
              Resources="0x40800000, 0x0, 0x40800100, 0x0, 0x40804000, 0x4CC, 0x40804100, 0x4CC,
-             0X4280C000, 0x113, 0X42810000, 0x190, 0x42814000, 0x0"/>
+             0X4280C000, 0x220, 0X42810000, 0x339, 0x42814000, 0x0"/>
 
          <!-- vr mode -->
          <!-- B CPU - Cluster min freq ~1.22 Ghz -->
