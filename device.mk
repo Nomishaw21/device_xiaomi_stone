@@ -361,7 +361,6 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayStone \
     WifiOverlayStone \
     FrameworksResOverlayStone \
-    SettingsLibOverlayStone \
     SettingsOverlayStone \
     SettingsProviderOverlayStone \
     SystemUIOverlayStone \
