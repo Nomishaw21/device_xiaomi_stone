@@ -128,11 +128,17 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     libcamera2ndk_vendor \
     libion.vendor \
-    libgui_vendor
+    liblz4.vendor \
+    libgui_vendor \
+    libpng.vendor
 
 # Camera GrapheneCamera
 PRODUCT_PACKAGES += \
     GrapheneCamera
+
+PRODUCT_PACKAGES += \
+    libpiex_shim \
+    libutilscallstack.vendor
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -395,6 +401,15 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
     vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
+
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.st \
@@ -552,6 +567,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
