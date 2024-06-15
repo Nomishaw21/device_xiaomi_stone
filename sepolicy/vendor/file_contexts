@@ -153,6 +153,9 @@
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:flash_[0-3](/.*)        u:object_r:sysfs_leds:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:switch_[0-3](/.*)       u:object_r:sysfs_leds:s0
 
+# Haptic
+/sys/class/leds/vibrator/brightness                                                 u:object_r:sysfs_vibrator:s0
+
 # Mlipay
 /vendor/bin/mlipayd@1.1                                                                                                        u:object_r:hal_mlipay_default_exec:s0
 

@@ -33,6 +33,9 @@ genfscon sysfs /devices/platform/soc/soc:silead_fp                              
 # Graphics
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon[0-4]+/name                                                 u:object_r:vendor_sysfs_graphics:s0
 
+# Haptic
+genfscon sysfs /sys/devices/platform/soc/soc:vibrator/leds/vibrator/brightness                                 u:object_r:sysfs_vibrator:s0
+
 # kmsg
 genfscon proc /last_kmsg                                                                                                            u:object_r:proc_last_kmsg:s0
 
