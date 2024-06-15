@@ -63,6 +63,10 @@ on init
     
     chown system system /sys/class/drm/card0/card0-DSI-1/hbm
     chmod 0664 /sys/class/drm/card0/card0-DSI-1/hbm
+    
+    # Allow system to adjust haptic level directly
+    chown system system /sys/class/leds/vibrator/brightness
+    chmod 0664 /sys/class/leds/vibrator/brightness
 
 on early-fs
     start vold
