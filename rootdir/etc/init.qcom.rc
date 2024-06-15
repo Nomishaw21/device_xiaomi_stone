@@ -75,6 +75,10 @@ on post-fs
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+    
+    # Allow system to adjust haptic level directly
+    chown system system /sys/class/leds/vibrator/brightness
+    chmod 0664 /sys/class/leds/vibrator/brightness
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
