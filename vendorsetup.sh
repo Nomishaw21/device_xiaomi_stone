@@ -4,4 +4,4 @@ git clone https://github.com/Nomishaw21/vendor_xiaomi_stone_unified -b 14 vendor
 
 git clone https://github.com/Nomishaw21/device_xiaomi_stone-kernel -b 14 device/xiaomi/stone-kernel
 
-gti clone https://github.com/Nomishaw21/Vendor-micam vendor/MiuiCameraLeica
+git clone https://github.com/Nomishaw21/Vendor-micam vendor/MiuiCameraLeica

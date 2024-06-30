@@ -118,6 +118,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libstdc++_vendor \
@@ -126,6 +127,12 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libion.vendor \
     libgui_vendor
+
+PRODUCT_PACKAGES += \
+    libpiex_shim \
+    liblz4.vendor \
+    libutilscallstack.vendor \
+    libpng.vendor
 
 # Camera GrapheneCamera
 PRODUCT_PACKAGES += \
