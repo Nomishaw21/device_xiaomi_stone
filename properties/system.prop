@@ -6,6 +6,9 @@ persist.audio.fluence.voicerec=true
 persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecomm=true
 
+# Blur
+ro.surface_flinger.supports_background_blur=0
+
 # CNE
 persist.vendor.cne.feature=1
 
