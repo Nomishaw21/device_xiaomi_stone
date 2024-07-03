@@ -1,5 +1,9 @@
-git clone --depth=1 https://github.com/Thereache/vendor_xiaomi_stone_unified.git -b 14 vendor/xiaomi
+# kernel source
+git clone https://github.com/Nomishaw21/device_xiaomi_stone-kernel device/xiaomi/stone-kernel
+git clone https://github.com/Stone-Trees/kernel_xiaomi_sm6375 kernel/xiaomi/sm6375
 
-git clone --depth=1 https://github.com/Thereache/device_xiaomi_stone-kernel.git -b 14 device/xiaomi/stone-kernel
+# vendor source
+git clone https://github.com/Nomishaw21/vendor_xiaomi_stone vendor/xiaomi/stone
 
-git clone --depth=1 https://github.com/Thereache/Stone_hardware_xiaomi.git hardware/xiaomi
+# Extra repo
+git clone https://github.com/Nomishaw21/Viper4AndroidFX packages/apps/ViPER4AndroidFX
