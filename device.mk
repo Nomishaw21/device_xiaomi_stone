@@ -13,6 +13,9 @@ $(call inherit-product-if-exists, vendor/dolby/dolby.mk)
 # Call the ViperFX Config
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+# For signed build
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
