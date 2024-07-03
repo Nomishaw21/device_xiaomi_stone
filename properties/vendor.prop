@@ -327,9 +327,6 @@ persist.vendor.sensors.sync_request=true
 # Storage
 ro.incremental.enable=yes
 
-# Thermal
-vendor.sys.thermal.data.path=/data/vendor/thermal/
-
 # USB
 vendor.usb.use_ffs_mtp=1
 vendor.usb.diag.func.name=diag
