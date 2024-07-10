@@ -638,6 +638,10 @@
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
+    
+    <!-- Control whether the pickup gesture is enabled by default. This value will be used
+     during initialization when the setting is still null. -->
+    <bool name="config_dozePickupGestureEnabled">false</bool>
 
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
