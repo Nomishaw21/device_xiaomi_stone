@@ -161,7 +161,7 @@ ro.vendor.bluetooth.defaultabsvol=false
 persist.bluetooth.disableabsvol=true
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.btstack.enable.lpa=true
-vendor.qcom.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=cherokee
 ro.vendor.fm.use_audio_session=true
 
 # Camera
