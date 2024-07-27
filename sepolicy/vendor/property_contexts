@@ -34,6 +34,9 @@ persist.vendor.sys.provision.status     u:object_r:vendor_tee_listener_prop:s0
 # NFC
 ro.vendor.nfc.repair                    u:object_r:vendor_nfc_prop:s0
 
+# Power HAL
+vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+
 # RIL
 odm.ril.radio.status.                   u:object_r:vendor_radio_prop:s0
 odm.ril.radio.status.sim1               u:object_r:vendor_radio_prop:s0

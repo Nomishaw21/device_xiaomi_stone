@@ -18,3 +18,6 @@ vendor_internal_prop(vendor_nfc_prop)
 
 # Serial number
 vendor_internal_prop(vendor_sno_prop);
+
+# Power HAL
+vendor_public_prop(vendor_power_prop);
