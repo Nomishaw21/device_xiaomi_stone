@@ -603,6 +603,7 @@ PRODUCT_PACKAGES += \
     init.qti.early_init.sh \
     init.qti.kernel.rc \
     init.qti.kernel.sh \
+    init.blair.post_boot.sh \
     init.target.rc \
     ueventd.qcom.rc \
     init.xiaomi.rc \
