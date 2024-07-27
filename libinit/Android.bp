@@ -23,3 +23,9 @@ cc_library_static {
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }
+
+sh_binary {
+    name: "init.blair.post_boot.sh",
+    src: "init.blair.post_boot.sh",
+    vendor: true,
+}
