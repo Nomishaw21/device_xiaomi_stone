@@ -21,13 +21,12 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
 TARGET_DEBLOAT := true
 
-#Blaze Flags
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := Nomi..
-WITH_GAPPS := true
-
 # Charging Animation
 TARGET_USE_PIXEL_CHARGER := true
+
+# blaze stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Nomi..
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := blaze_stone
