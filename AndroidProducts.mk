@@ -6,8 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/blaze_stone.mk
-
-COMMON_LUNCH_CHOICES := \
-    blaze_stone-user \
-    blaze_stone-userdebug \
-    blaze_stone-eng
