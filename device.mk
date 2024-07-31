@@ -144,10 +144,6 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libpng.vendor
 
-# Camera GrapheneCamera
-PRODUCT_PACKAGES += \
-    GrapheneCamera
-
 PRODUCT_PACKAGES += \
     libpiex_shim \
     libutilscallstack.vendor
