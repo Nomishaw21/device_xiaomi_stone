@@ -10,6 +10,9 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Device uses high-density artwork where available
