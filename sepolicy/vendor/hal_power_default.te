@@ -5,3 +5,6 @@ allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
+
+# Allow powerhal to write, open & read
+allow hal_power_default proc:file { write open read };
