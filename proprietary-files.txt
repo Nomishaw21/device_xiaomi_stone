@@ -1,12 +1,4 @@
-# All unpinned blobs below are extracted from miui_MOONSTONEGlobal_V14.0.6.0.TMPMIXM_f60b30054a_13.0
-
 # All unpinned blobs below are extracted from miui_MOONSTONEEEAGlobal_OS1.0.3.0.UMPEUXM_676208b136_14.0
-
-# ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
 
 # ACDB
 vendor/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_SKU1_Bluetooth_cal.acdb
@@ -45,6 +37,13 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
+
+# ACDB libraries
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/bm2n06.bin
@@ -794,19 +793,18 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 
-# ACDB libraries
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
+# ADSP
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libmisoundfx.so
 
 # Audio - from cheetah-user 14 UP1A.231105.003 11010452 release-keys
@@ -862,6 +860,8 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/bin/mutualex
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -889,8 +889,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
@@ -1048,9 +1046,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/bin/fm_qsoc_patches
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init.qti.fm.sh
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
@@ -1168,16 +1163,16 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
-vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
+vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -1292,6 +1287,11 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
+# Peripheral manager
+vendor/bin/pm-proxy
+vendor/bin/pm-service
+vendor/lib64/libperipheral_client.so
+
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -1313,10 +1313,10 @@ etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qmipriod
-vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
-vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/etc/init/qmipriod.debug.rc
 vendor/etc/sec_config
+vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -1408,9 +1408,9 @@ system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrilNrd
-vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
+vendor/bin/hw/qcrilNrd
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qrtr-cfg
@@ -1420,8 +1420,8 @@ vendor/bin/qti
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
 vendor/bin/rmt_storage
-vendor/bin/shsusrd
 vendor/bin/ssgtzd
+vendor/bin/shsusrd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -1431,8 +1431,8 @@ vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
-vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/shsusrd.rc
+vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
@@ -1484,9 +1484,9 @@ vendor/lib64/libqcrilNrQtiBus.so
 vendor/lib64/libqcrilNrQtiMutex.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqrtr.so
+vendor/lib64/libqsap_sdk.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqrtrclient.so
-vendor/lib64/libqsap_sdk.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-qc-ltedirectdisc.so
@@ -1497,8 +1497,8 @@ vendor/lib64/librilqmiservices.so
 vendor/lib64/librilutils.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
+vendor/lib64/qcrilMarshal.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
@@ -1580,34 +1580,3 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 vendor/bin/cnss-daemon
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
-
-# Dolby - from 9R OOS 11.2.8.8
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
--system_ext/priv-app/DaxUI/DaxUI.apk|f2123124ddef928c7c490e2a83b0af5466a0df7e
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
-vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
-vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
-vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
-vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
-vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
-vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
-vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c
-vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
-vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
-vendor/lib64/soundfx/libeffectproxy.so|e09115bb4087510eab62d21ab050274d6c98db71
-vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
-vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
-vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
-vendor/lib64/libdapparamstorage.so|b820de455f13bce531331f9e134b1e56b8a651d4
-vendor/lib64/libdeccfg.so|adea652793ab688253b0b56d6c165625184eab54
-vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0
-vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad
-vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92
-vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
-
