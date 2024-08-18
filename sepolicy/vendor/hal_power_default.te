@@ -8,3 +8,5 @@ set_prop(hal_power_default, vendor_power_prop)
 
 # Allow powerhal to write, open & read
 allow hal_power_default proc:file { write open read };
+
+allow hal_power_default sysfs_devices_system_cpu:file write;
