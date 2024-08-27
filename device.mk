@@ -282,6 +282,7 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_ENABLE_UFFD_GC := false
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/stone-kernel/kernel-headers
 
 # Keymaster
 PRODUCT_PACKAGES += \
