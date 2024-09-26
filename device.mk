@@ -14,10 +14,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
+TARGET_PROVIDES_POWERHAL := true
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+# Platform
+MSMSTEPPE := holi
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
+# Treble flag
+PRODUCT_PRODUCT_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE := true
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -368,6 +376,17 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libcrypto-v33 \
+    libutilscallstack.vendor:64 \
+    libnetutils.vendor:64 \
+    libsqlite.vendor:64 \
+    libprocessgroup.vendor \
+    libjsoncpp.vendor \
+    libcurl.vendor \
+    libpng.vendor:32
+
 # Overlays RRO
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayStone \
@@ -536,25 +555,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client
 
-# Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib-product \
-    extphonelib.xml \
-    extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext \
-    xiaomi-telephony-stub
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    xiaomi-telephony-stub
-
+# Tele
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \

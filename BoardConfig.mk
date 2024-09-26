@@ -99,7 +99,6 @@ BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6375
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
@@ -115,11 +114,13 @@ BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 # Prebuilt Kernel
-BOARD_KERNEL_BINARIES := kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_NO_KERNEL := false
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
-TARGET_FORCE_PREBUILT_KERNEL := true
+#TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel
-TARGET_KERNEL_CONFIG := holi_QGKI
+#TARGET_KERNEL_CONFIG := holi_QGKI
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
@@ -231,11 +232,11 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := \
+DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/vintf/manifest.xml \
     $(DEVICE_PATH)/vintf/manifest_nfc.xml
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml
 
 # WiFi
