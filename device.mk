@@ -591,6 +591,12 @@ PRODUCT_COPY_FILES += \
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# ims
+PRODUCT_PACKAGES += \
+    xiaomi-telephony-stub
+
+PRODUCT_BOOT_JARS += \
+    xiaomi-telephony-stub
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
