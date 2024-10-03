@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_stone.mk
+    $(LOCAL_DIR)/blaze_stone.mk
 
